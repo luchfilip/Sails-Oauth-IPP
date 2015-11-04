@@ -1,0 +1,163 @@
+{
+  "data": {
+    "clients": [
+      {
+        "client_id": "WacQfoTIiX5FR6mZbh9LqwP6zipepwyJ",
+        "client_secret": "vyThobL0TUfQtPPdd17haXqKLQKtGMH8",
+        "email": null,
+        "clientSecret": "$2a$10$UJTu2619ouyF0Ht8epk5pecrWKLUF/oVZSs1e5ZYeuYGqTgfUbpu2",
+        "createdAt": "2015-11-04T06:12:06.241Z",
+        "updatedAt": "2015-11-04T06:12:06.241Z",
+        "id": 1
+      }
+    ],
+    "tokens": [
+      {
+        "client_id": "WacQfoTIiX5FR6mZbh9LqwP6zipepwyJ",
+        "user_id": null,
+        "access_token": "1mqIUHD059ErjlpJbhmKpf1suzENpg5h",
+        "refresh_token": "SBBYFmuyX0zrvGO9yqh3TLB1lPV3NnRY",
+        "code": "rB8vYV71SRmD4q1WzLd5IBCrTG8YSbDv",
+        "expiration_date": "2015-11-04T07:12:07.254Z",
+        "createdAt": "2015-11-04T06:12:06.278Z",
+        "updatedAt": "2015-11-04T06:12:06.278Z",
+        "id": 1
+      }
+    ],
+    "users": []
+  },
+  "schema": {
+    "clients": {
+      "name": {
+        "type": "string"
+      },
+      "organization": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string"
+      },
+      "client_id": {
+        "type": "string",
+        "unique": true
+      },
+      "client_secret": {
+        "type": "string"
+      },
+      "trust_level": {
+        "type": "string"
+      },
+      "redirect_uri": {
+        "type": "string"
+      },
+      "date_registered": {
+        "type": "string"
+      },
+      "date_verified": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "tokens": {
+      "access_token": {
+        "type": "string",
+        "unique": true
+      },
+      "refresh_token": {
+        "type": "string",
+        "unique": true
+      },
+      "code": {
+        "type": "string",
+        "unique": true
+      },
+      "user_id": {
+        "type": "string"
+      },
+      "expiration_date": {
+        "type": "date"
+      },
+      "client_id": {
+        "type": "string"
+      },
+      "security_level": {
+        "type": "string"
+      },
+      "scope": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "users": {
+      "username": {
+        "type": "string",
+        "unique": true
+      },
+      "email": {
+        "type": "string",
+        "unique": true
+      },
+      "first_name": {
+        "type": "string"
+      },
+      "last_name": {
+        "type": "string"
+      },
+      "location": {
+        "type": "string"
+      },
+      "date_registered": {
+        "type": "date"
+      },
+      "date_verified": {
+        "type": "date"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      },
+      "encrypted_password": {
+        "type": "string"
+      }
+    }
+  },
+  "counters": {
+    "clients": {
+      "id": 1
+    },
+    "tokens": {
+      "id": 1
+    },
+    "users": {}
+  }
+}
